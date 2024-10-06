@@ -1,0 +1,36 @@
+[02-Feb-2023 20:04:05 Asia/Kolkata] PHP Warning:  include_once(../../models/tswia_details.php): failed to open stream: No such file or directory in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 9
+[02-Feb-2023 20:04:05 Asia/Kolkata] PHP Warning:  include_once(): Failed opening '../../models/tswia_details.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 9
+[02-Feb-2023 20:04:05 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class 'Tswia_details' not found in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 16
+[02-Feb-2023 20:09:54 Asia/Kolkata] PHP Warning:  include_once(../../models/tswia_details.php): failed to open stream: No such file or directory in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 9
+[02-Feb-2023 20:09:54 Asia/Kolkata] PHP Warning:  include_once(): Failed opening '../../models/tswia_details.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 9
+[02-Feb-2023 20:09:54 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class 'Tswia_details' not found in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 16
+[02-Feb-2023 20:13:49 Asia/Kolkata] PHP Warning:  include_once(../../models/tswia_details.php): failed to open stream: No such file or directory in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 9
+[02-Feb-2023 20:13:49 Asia/Kolkata] PHP Warning:  include_once(): Failed opening '../../models/tswia_details.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 9
+[02-Feb-2023 20:13:49 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class 'Tswia_details' not found in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 16
+[02-Feb-2023 20:16:30 Asia/Kolkata] PHP Warning:  include_once(../../models/tswia_details.php): failed to open stream: No such file or directory in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 9
+[02-Feb-2023 20:16:30 Asia/Kolkata] PHP Warning:  include_once(): Failed opening '../../models/tswia_details.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 9
+[02-Feb-2023 20:16:30 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class 'Tswia_details' not found in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/createMulti.php on line 16
+[16-Feb-2023 19:59:34 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class 'Tswis_details' not found in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/readAllByStore.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/readAllByStore.php on line 14
+[16-Feb-2023 19:59:38 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class 'Tswis_details' not found in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/readAllByStore.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/readAllByStore.php on line 14
+[16-Feb-2023 20:09:18 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class 'Tswias_details' not found in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/readAllByStore.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/api/tswia_details/readAllByStore.php on line 14

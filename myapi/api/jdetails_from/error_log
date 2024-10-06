@@ -1,0 +1,85 @@
+[31-Dec-2022 16:26:36 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO11613556620' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php:292
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php(292): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/jdetails_from/createMulti.php(68): Jdetails_from->createMulti('(NULL,"872","sh...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php on line 292
+[03-Jan-2023 23:19:25 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO021949160' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php:292
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php(292): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/jdetails_from/createMulti.php(68): Jdetails_from->createMulti('(NULL,"887","sh...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php on line 292
+[03-Jan-2023 23:20:04 Asia/Kolkata] PHP Warning:  Invalid argument supplied for foreach() in /home/aljouryc/erp.hosamdev.com/myapi23/api/jdetails_from/createMulti.php on line 25
+[03-Jan-2023 23:20:04 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php:292
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php(292): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/jdetails_from/createMulti.php(68): Jdetails_from->createMulti('')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php on line 292
+[04-Jan-2023 19:13:11 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO03154239661' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php:292
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php(292): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/jdetails_from/createMulti.php(68): Jdetails_from->createMulti('(NULL,"917","sh...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php on line 292
+[09-Jan-2023 13:55:41 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO01102457555' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php:292
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php(292): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/jdetails_from/createMulti.php(68): Jdetails_from->createMulti('(NULL,"955","sh...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php on line 292
+[14-Jan-2023 14:15:32 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO06104511154' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php:292
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php(292): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/jdetails_from/createMulti.php(68): Jdetails_from->createMulti('(NULL,"966","sh...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/jdetails_from.php on line 292
+[29-Jan-2023 04:29:28 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM
+           jdetails_from 
+           
+          INNER JOIN journal ON jdeta' at line 18 in /home/aljouryc/erp.hosamdev.com/myapinew/models/jdetails_from.php:130
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/jdetails_from.php(130): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/jdetails_from/getTopSales.php(21): Jdetails_from->readTop()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/jdetails_from.php on line 130
+[29-Jan-2023 04:29:28 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM
+           jdetails_from 
+           
+          INNER JOIN journal ON jdeta' at line 18 in /home/aljouryc/erp.hosamdev.com/myapinew/models/jdetails_from.php:130
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/jdetails_from.php(130): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/jdetails_from/getTopSales.php(21): Jdetails_from->readTop()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/jdetails_from.php on line 130
+[01-Feb-2023 17:00:11 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO13132945844' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php:302
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php(302): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/jdetails_from/createMulti.php(70): Jdetails_from->createMulti('(NULL,"1075","s...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php on line 302
+[05-Feb-2023 14:20:11 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO10104532508' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php:302
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php(302): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/jdetails_from/createMulti.php(70): Jdetails_from->createMulti('(NULL,"1097","s...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php on line 302
+[08-Mar-2023 18:34:12 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO231533051' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php:302
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php(302): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/jdetails_from/createMulti.php(70): Jdetails_from->createMulti('(NULL,"1312","s...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php on line 302
+[03-Apr-2023 19:34:39 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO3116158832' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php:302
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php(302): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/jdetails_from/createMulti.php(70): Jdetails_from->createMulti('(NULL,"1434","s...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php on line 302
+[06-Apr-2023 16:46:08 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO34131419884' for key 'jdetails_from.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php:302
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php(302): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/jdetails_from/createMulti.php(70): Jdetails_from->createMulti('(NULL,"1482","s...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/jdetails_from.php on line 302

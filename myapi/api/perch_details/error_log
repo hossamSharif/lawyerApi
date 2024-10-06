@@ -1,0 +1,126 @@
+[23-Nov-2022 13:39:31 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"23-11-2022","9000"),(NULL,"sh10311211519","زيت تابكوكرتونة 1ك",' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:368
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(368): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(70): Perch_details->createMulti('(NULL,"","\xD8\xB2\xD9\x8A\xD8...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 368
+[29-Jan-2023 03:21:17 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1 in /home/aljouryc/erp.hosamdev.com/myapinew/models/perch_details.php:378
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/perch_details.php(378): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"sh062350...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/perch_details.php on line 378
+[29-Jan-2023 03:46:59 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '),(NULL,"sh0001520231","صينية كويلات جانسي فاروك","6200.00"' at line 2 in /home/aljouryc/erp.hosamdev.com/myapinew/models/perch_details.php:378
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/perch_details.php(378): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"sh000152...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/perch_details.php on line 378
+[18-Feb-2023 18:45:19 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"18-02-2023","700",2),(NULL,"sh161556885","ترس منفلة si","950",15,"1275' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:378
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(378): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","\xD8\xB5\xD9\x84\xD9...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 378
+[08-Apr-2023 16:27:25 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:28:15 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:29:36 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:29:38 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:29:38 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:29:54 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:30:00 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:30:38 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:30:40 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:30:40 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:30:48 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:30:57 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:30:59 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:34:49 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:43:49 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:45:17 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581
+[08-Apr-2023 16:52:22 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"","",,"","",),(NULL,"sh1184035636","طقم بلي فلنشة امامي فار' at line 2 in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php:581
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php(581): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/perch_details/createMulti.php(72): Perch_details->createMulti('(NULL,"","","",...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/perch_details.php on line 581

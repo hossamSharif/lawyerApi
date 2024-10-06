@@ -1,0 +1,36 @@
+[04-Feb-2023 17:41:19 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tswia_details.quantity' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php:129
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/items.php(129): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/items/readStock.php(21): Items->readStock()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php on line 129
+[04-Feb-2023 17:41:19 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tswia_details.quantity' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php:129
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/items.php(129): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/items/readStock.php(21): Items->readStock()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php on line 129
+[04-Feb-2023 17:43:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tswia_details.quantity' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php:129
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/items.php(129): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/items/readStock.php(21): Items->readStock()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php on line 129
+[04-Feb-2023 17:43:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tswia_details.quantity' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php:129
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/items.php(129): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/items/readStock.php(21): Items->readStock()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php on line 129
+[04-Feb-2023 17:43:31 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tswia_details.quantity' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php:129
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/items.php(129): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/items/readStock.php(21): Items->readStock()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php on line 129
+[04-Feb-2023 17:43:32 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tswia_details.quantity' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php:129
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/items.php(129): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/items/readStock.php(21): Items->readStock()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/items.php on line 129

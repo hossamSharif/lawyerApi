@@ -1,0 +1,163 @@
+[17-Feb-2023 20:32:11 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',"insert firstq","٢٠٢٣-٠٢-١٧ ١٧:٠٢:٠٩",0,"{"id":null,"item_id":"67' at line 2 in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(71): LogHistory->createMulti('(NULL,"sh151729...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 20:36:21 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id":null,"item_id":"680","store_id":"1","quantity":0,"pay_price":"12","perch_pri' at line 2 in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(71): LogHistory->createMulti('(NULL,"sh151762...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 20:37:44 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id":null,"item_id":"681","store_id":"1","quantity":0,"pay_price":"12","perch_pri' at line 2 in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(71): LogHistory->createMulti('(NULL,"sh151774...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 20:50:46 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id":null,"item_id":"681","store_id":"1","quantity":0,"pay_price":"12","perch_pri' at line 2 in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(68): LogHistory->createMulti('(NULL,"sh151774...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 20:53:28 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id":null,"item_id":"681","store_id":"1","quantity":0,"pay_price":"12","perch_pri' at line 2 in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(68): LogHistory->createMulti('(NULL,"sh151774...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 20:57:08 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id":null,"item_id":"681","store_id":"1","quantity":0,"pay_price":"12","perch_pri' at line 2 in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(68): LogHistory->createMulti('(NULL,"sh151774...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 22:10:52 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22032]: <<Unknown error>>: 3140 Invalid JSON text: "Invalid value." at position 0 in value for column 'logHistory.logToken'. in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(68): LogHistory->createMulti('(NULL,"sh151840...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 22:15:56 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22032]: <<Unknown error>>: 3140 Invalid JSON text: "Invalid value." at position 1 in value for column 'logHistory.logToken'. in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(68): LogHistory->createMulti('(NULL,"sh151845...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 22:34:09 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id":null,"item_id":"700","store_id":"1","quantity":0,"pay_price":"1222","perch_p' at line 2 in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(68): LogHistory->createMulti('(NULL,"sh151948...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 22:36:55 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'id":null,"item_id":"700","store_id":"1","quantity":0,"pay_price":"1222","perch_p' at line 2 in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(68): LogHistory->createMulti('(NULL,"sh151948...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 22:47:57 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"id":null,"item_id":"700","store_id":"1","quantity":0,"pay_price":"1222","perch_' at line 2 in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:220
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(220): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/createMulti.php(68): LogHistory->createMulti('(NULL,"sh151948...')
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 220
+[17-Feb-2023 23:26:19 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'logHistory.changee' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:59
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(59): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 59
+[17-Feb-2023 23:27:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'logHistory.changee' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:59
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(59): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 59
+[17-Feb-2023 23:28:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'logHistory.changee' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:59
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(59): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 59
+[17-Feb-2023 23:29:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'logHistory.changee' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:59
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(59): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 59
+[17-Feb-2023 23:30:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'logHistory.logTatus' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:58
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(58): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 58
+[18-Feb-2023 02:36:15 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.userId' in 'where clause' in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:58
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(58): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 58
+[18-Feb-2023 02:36:30 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.userId' in 'where clause' in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:58
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(58): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 58
+[18-Feb-2023 03:00:14 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:58
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(58): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 58
+[18-Feb-2023 03:00:16 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:58
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(58): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 58
+[18-Feb-2023 03:01:16 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php:58
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php(58): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapitest/models/logHistory.php on line 58
+[18-Feb-2023 03:11:14 Asia/Kolkata] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php on line 49
+[18-Feb-2023 03:11:14 Asia/Kolkata] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php on line 49
+[18-Feb-2023 03:12:15 Asia/Kolkata] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php on line 49
+[18-Feb-2023 03:12:15 Asia/Kolkata] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/aljouryc/erp.hosamdev.com/myapitest/api/logHistory/readByStore.php on line 49
+[06-Mar-2023 17:35:16 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php:96
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php(96): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/logHistory/readAllByStore.php(20): LogHistory->readAllByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php on line 96
+[06-Mar-2023 17:40:22 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php:96
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php(96): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/logHistory/readAllByStore.php(20): LogHistory->readAllByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php on line 96
+[06-Mar-2023 17:41:36 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php:96
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php(96): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/logHistory/readAllByStore.php(20): LogHistory->readAllByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php on line 96
+[22-Mar-2023 17:41:41 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php:51
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#1 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php on line 51
+[06-Apr-2023 02:14:42 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php:51
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#1 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php on line 51
+[06-Apr-2023 02:14:42 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php:51
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/api/logHistory/readByStore.php(22): LogHistory->readByStore()
+#1 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/logHistory.php on line 51

@@ -1,0 +1,26 @@
+[23-Aug-2021 00:53:12 Asia/Singapore] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\SMTP' not found in /home/aljoury1/public_html/myapi/api/mailing/mail.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 21
+[23-Aug-2021 00:54:51 Asia/Singapore] PHP Parse error:  syntax error, unexpected '.', expecting identifier (T_STRING) or function (T_FUNCTION) or const (T_CONST) or \\ (T_NS_SEPARATOR) in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 7
+[23-Aug-2021 01:07:18 Asia/Singapore] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\SMTP' not found in /home/aljoury1/public_html/myapi/api/mailing/mail.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 21
+[23-Aug-2021 01:07:22 Asia/Singapore] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\SMTP' not found in /home/aljoury1/public_html/myapi/api/mailing/mail.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 21
+[23-Aug-2021 01:08:21 Asia/Singapore] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\SMTP' not found in /home/aljoury1/public_html/myapi/api/mailing/mail.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 21
+[24-Aug-2021 00:06:24 Asia/Singapore] PHP Parse error:  syntax error, unexpected '<' in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 52
+[24-Aug-2021 00:07:06 Asia/Singapore] PHP Parse error:  syntax error, unexpected '<' in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 52
+[24-Aug-2021 00:08:23 Asia/Singapore] PHP Parse error:  syntax error, unexpected '<' in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 52
+[24-Aug-2021 00:08:37 Asia/Singapore] PHP Parse error:  syntax error, unexpected '<' in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 52
+[24-Aug-2021 00:09:19 Asia/Singapore] PHP Warning:  Creating default object from empty value in /home/aljoury1/public_html/myapi/api/mailing/mail.php on line 23
+[24-Aug-2021 04:36:21 Asia/Singapore] PHP Parse error:  syntax error, unexpected ''-'' (T_CONSTANT_ENCAPSED_STRING) in /home/aljoury1/public_html/myapi/api/mailing/mailcource.php on line 56
+[24-Aug-2021 04:36:27 Asia/Singapore] PHP Parse error:  syntax error, unexpected ''-'' (T_CONSTANT_ENCAPSED_STRING) in /home/aljoury1/public_html/myapi/api/mailing/mailcource.php on line 56
+[24-Aug-2021 04:37:41 Asia/Singapore] PHP Parse error:  syntax error, unexpected ''-'' (T_CONSTANT_ENCAPSED_STRING) in /home/aljoury1/public_html/myapi/api/mailing/mailcource.php on line 56
+[24-Aug-2021 04:37:47 Asia/Singapore] PHP Parse error:  syntax error, unexpected ''-'' (T_CONSTANT_ENCAPSED_STRING) in /home/aljoury1/public_html/myapi/api/mailing/mailcource.php on line 56

@@ -1,0 +1,63 @@
+[28-Jan-2023 21:58:16 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'perch.yearId = 1), 0) AS purchChangeeTot ,
+           IFNULL((SELECT SUM(perch.p' at line 21 in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php:146
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php(146): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/sub_accounts/readByStore.php(22): Sub_accounts->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php on line 146
+[28-Jan-2023 21:58:17 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'perch.yearId = 1), 0) AS purchChangeeTot ,
+           IFNULL((SELECT SUM(perch.p' at line 21 in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php:146
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php(146): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/sub_accounts/readByStore.php(22): Sub_accounts->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php on line 146
+[28-Jan-2023 22:00:18 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'perch.yearId = 1), 0) AS purchChangeeTot ,
+           IFNULL((SELECT SUM(perch.p' at line 21 in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php:146
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php(146): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/sub_accounts/readByStore.php(22): Sub_accounts->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php on line 146
+[28-Jan-2023 22:00:22 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'perch.yearId = 1), 0) AS purchChangeeTot ,
+           IFNULL((SELECT SUM(perch.p' at line 21 in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php:146
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php(146): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/sub_accounts/readByStore.php(22): Sub_accounts->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php on line 146
+[28-Jan-2023 22:23:45 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'perch.yearId = 1), 0) AS purchChangeeTot ,
+           IFNULL((SELECT SUM(perch.p' at line 21 in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php:146
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php(146): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/sub_accounts/readByStore.php(22): Sub_accounts->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php on line 146
+[28-Jan-2023 22:23:46 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'perch.yearId = 1), 0) AS purchChangeeTot ,
+           IFNULL((SELECT SUM(perch.p' at line 21 in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php:146
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php(146): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/sub_accounts/readByStore.php(22): Sub_accounts->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php on line 146
+[28-Jan-2023 22:55:27 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'perch.yearId = 1), 0) AS purchChangeeTot ,
+           IFNULL((SELECT SUM(perch.p' at line 21 in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php:146
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php(146): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/sub_accounts/readByStore.php(22): Sub_accounts->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php on line 146
+[28-Jan-2023 22:55:27 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'perch.yearId = 1), 0) AS purchChangeeTot ,
+           IFNULL((SELECT SUM(perch.p' at line 21 in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php:146
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php(146): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/sub_accounts/readByStore.php(22): Sub_accounts->readByStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php on line 146
+[29-Jan-2023 04:26:45 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ANDjdetails_to.yearId = 1 ), 0) AS toDebitTot,
+         IFNULL((SELECT SUM(jdeta' at line 13 in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php:184
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php(184): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapinew/api/sub_accounts/readAllStore.php(22): Sub_accounts->readAllStore()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapinew/models/sub_accounts.php on line 184

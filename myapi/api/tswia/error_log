@@ -1,0 +1,6 @@
+[02-Feb-2023 21:23:08 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pay_id' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapi/models/tswia.php:180
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/tswia.php(180): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/tswia/getTopSales.php(21): Tswia->getTopSales()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/tswia.php on line 180

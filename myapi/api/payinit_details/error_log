@@ -1,0 +1,12 @@
+[19-Dec-2022 15:57:08 Asia/Kolkata] PHP Warning:  include_once(../../models/payinit_details.php): failed to open stream: No such file or directory in /home/aljouryc/erp.hosamdev.com/myapi/api/payinit_details/createMulti.php on line 9
+[19-Dec-2022 15:57:08 Asia/Kolkata] PHP Warning:  include_once(): Failed opening '../../models/payinit_details.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/aljouryc/erp.hosamdev.com/myapi/api/payinit_details/createMulti.php on line 9
+[19-Dec-2022 15:57:08 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class 'Pay_details' not found in /home/aljouryc/erp.hosamdev.com/myapi/api/payinit_details/createMulti.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/api/payinit_details/createMulti.php on line 16
+[19-Dec-2022 16:02:34 Asia/Kolkata] PHP Warning:  include_once(../../models/payinit_details.php): failed to open stream: No such file or directory in /home/aljouryc/erp.hosamdev.com/myapi/api/payinit_details/createMulti.php on line 9
+[19-Dec-2022 16:02:34 Asia/Kolkata] PHP Warning:  include_once(): Failed opening '../../models/payinit_details.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') in /home/aljouryc/erp.hosamdev.com/myapi/api/payinit_details/createMulti.php on line 9
+[19-Dec-2022 16:02:34 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Class 'Pay2_details' not found in /home/aljouryc/erp.hosamdev.com/myapi/api/payinit_details/createMulti.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/api/payinit_details/createMulti.php on line 16

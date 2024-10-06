@@ -1,0 +1,159 @@
+[23-Nov-2022 12:55:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh103102342908' for key 'pay.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:305
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(305): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/create.php(34): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 305
+[23-Nov-2022 14:47:55 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh103114952147' for key 'pay.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:305
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(305): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/create.php(34): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 305
+[30-Nov-2022 20:03:00 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh103154620349' for key 'pay.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:305
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(305): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/create.php(34): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 305
+[08-Dec-2022 13:55:55 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.payComment,
+   user_id = '5'' at line 13 in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:313
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(313): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/create.php(35): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 313
+[08-Dec-2022 13:56:02 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.payComment,
+   user_id = '5'' at line 13 in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:313
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(313): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/create.php(35): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 313
+[08-Dec-2022 14:31:27 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.payComment,
+   user_id = '5'' at line 13 in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:313
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(313): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/create.php(35): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 313
+[08-Dec-2022 18:58:23 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:395
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(395): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/update.php(39): Pay->update()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 395
+[08-Dec-2022 18:58:39 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:395
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(395): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/update.php(39): Pay->update()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 395
+[08-Dec-2022 19:08:28 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:395
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(395): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/update.php(39): Pay->update()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 395
+[08-Dec-2022 19:08:48 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:395
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(395): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/update.php(39): Pay->update()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 395
+[08-Dec-2022 19:09:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:395
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(395): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/update.php(39): Pay->update()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 395
+[08-Dec-2022 19:09:52 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:395
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(395): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/pay/update.php(39): Pay->update()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 395
+[15-Dec-2022 15:50:51 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh114121747577' for key 'pay.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:323
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(323): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 323
+[15-Dec-2022 15:51:55 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh114121747577' for key 'pay.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php:323
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php(323): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/pay.php on line 323
+[18-Dec-2022 23:55:53 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh11019466427' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:323
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(323): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 323
+[19-Dec-2022 00:02:12 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh11019466427' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:323
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(323): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 323
+[19-Dec-2022 16:09:51 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh111123040239' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:323
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(323): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 323
+[19-Dec-2022 16:14:12 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay.pay_id' in 'field list' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:147
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(147): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/getTopSales.php(21): Pay->getTopSales()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 147
+[24-Dec-2022 17:48:17 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh1161510293' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 322
+[24-Dec-2022 19:41:00 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh1161510293' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 322
+[24-Dec-2022 19:41:41 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh1161510293' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 322
+[24-Dec-2022 19:42:22 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh1161510293' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 322
+[24-Dec-2022 19:44:54 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh1161510293' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 322
+[24-Dec-2022 19:45:20 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh1161510293' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 322
+[24-Dec-2022 19:45:44 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh1161510293' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 322
+[14-Feb-2023 14:22:00 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sh12105315691' for key 'payinit.pay_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/payinit/create.php(36): Pay->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/payinit.php on line 322

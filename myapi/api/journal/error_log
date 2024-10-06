@@ -1,0 +1,159 @@
+[31-Dec-2022 16:26:46 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO11613556620' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 322
+[31-Dec-2022 16:26:52 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO11613556620' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 322
+[03-Jan-2023 23:22:29 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO021949160' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php on line 322
+[03-Jan-2023 23:23:50 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO021949160' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php on line 322
+[04-Jan-2023 19:13:10 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO03154239661' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php on line 322
+[04-Jan-2023 19:13:18 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO03154239661' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php on line 322
+[04-Jan-2023 19:13:26 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO03154239661' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php on line 322
+[04-Jan-2023 19:13:42 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO03154239661' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php on line 322
+[09-Jan-2023 13:56:03 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO01102457555' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php on line 322
+[09-Jan-2023 13:56:03 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO01102457555' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php on line 322
+[14-Jan-2023 14:15:31 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO06104511154' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php:322
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php(322): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi23/api/journal/create.php(32): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi23/models/journal.php on line 322
+[01-Feb-2023 17:00:24 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO13132945844' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[01-Feb-2023 17:00:28 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO13132945844' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[05-Feb-2023 14:00:34 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND yearId = 1 AND j_date >= '2022-12-01' AND   j_date <= '2022-12-31' 
+        ' at line 17 in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:276
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(276): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/getSales2Date.php(24): Journal->getSales2Date()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 276
+[05-Feb-2023 14:00:38 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND yearId = 1 AND j_date >= '2022-12-01' AND   j_date <= '2022-12-31' 
+        ' at line 17 in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:276
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(276): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/getSales2Date.php(24): Journal->getSales2Date()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 276
+[05-Feb-2023 14:02:09 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND yearId = 1 AND j_date >= '2022-12-05' AND   j_date <= '2023-12-31' 
+        ' at line 17 in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:276
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(276): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/getSales2Date.php(24): Journal->getSales2Date()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 276
+[05-Feb-2023 14:20:17 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO10104532508' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[05-Feb-2023 14:20:42 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO10104532508' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[08-Mar-2023 18:34:15 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO231533051' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[01-Apr-2023 16:56:49 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO36132259604' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[01-Apr-2023 16:56:51 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO36132259604' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[01-Apr-2023 16:56:56 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO36132259604' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[03-Apr-2023 19:34:41 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO3116158832' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[06-Apr-2023 16:46:16 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO34131419884' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[06-Apr-2023 16:46:36 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO34131419884' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
+[06-Apr-2023 16:46:59 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'shJO34131419884' for key 'journal.j_ref' in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php:332
+Stack trace:
+#0 /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php(332): PDOStatement->execute()
+#1 /home/aljouryc/erp.hosamdev.com/myapi/api/journal/create.php(33): Journal->create()
+#2 {main}
+  thrown in /home/aljouryc/erp.hosamdev.com/myapi/models/journal.php on line 332
