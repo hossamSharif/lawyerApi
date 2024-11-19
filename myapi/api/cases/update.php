@@ -28,7 +28,7 @@
   $case->client_role = $data->client_role;
   $case->service_classification = $data->service_classification;
   $case->branch = $data->branch;
-  $case->court_name = $data->court_name;
+  $case->court_id = $data->court_id;
   $case->opponent_name = $data->opponent_name;
   $case->opponent_id = $data->opponent_id;
   $case->opponent_representative = $data->opponent_representative;

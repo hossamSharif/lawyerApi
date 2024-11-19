@@ -25,8 +25,12 @@
       // Branch handling the case
       public $branch;
   
+       // Name of the court
+       public $court_id;
       // Name of the court
       public $court_name;
+      public $status_name;
+      public $status_color;
   
       // Name of the opponent
       public $opponent_name;
@@ -94,6 +98,9 @@
       //for delete ony
       public $case_id;
     // Constructor with DB
+
+    public $searchTerm ;
+
     public function __construct($db) {
       $this->conn = $db;
     }
@@ -110,7 +117,7 @@ public function getCaseById() {
       cases.client_role,
       cases.service_classification,
       cases.branch,
-      cases.court_name,
+      cases.court_id,
       cases.opponent_name,
       cases.opponent_id,
       cases.opponent_representative,
@@ -129,6 +136,9 @@ public function getCaseById() {
       cases.Plaintiff_Requests,
       cases.case_status_najz,
       cases.case_subject,
+      IFNULL((SELECT status_name FROM case_status WHERE case_status.id = cases.case_status), 0) AS status_name,
+      IFNULL((SELECT status_color FROM case_status WHERE  case_status.id = cases.case_status), 0) AS status_color,
+      IFNULL((SELECT court_name FROM courts WHERE courts.id = cases.court_id), 0) AS court_name,
       IFNULL((SELECT cust_name FROM customer WHERE customer.id = cases.client_id), 0) AS client_name,
       -- (SELECT JSON_ARRAYAGG(JSON_OBJECT("name", users.full_name, "id", users.id)) 
       --  FROM caselawyers 
@@ -154,9 +164,8 @@ public function getCaseById() {
   return $stmt;
 }
 
-
-// get case in the range
-public function getCasesInRange() {
+/// get case by id
+public function getCaseBySearchTerm() {
   // Create query
   $query = 'SELECT 
       cases.id, 
@@ -166,7 +175,7 @@ public function getCasesInRange() {
       cases.client_role,
       cases.service_classification,
       cases.branch,
-      cases.court_name,
+      cases.court_id,
       cases.opponent_name,
       cases.opponent_id,
       cases.opponent_representative,
@@ -185,6 +194,69 @@ public function getCasesInRange() {
       cases.Plaintiff_Requests,
       cases.case_status_najz,
       cases.case_subject,
+      IFNULL((SELECT status_name FROM case_status WHERE case_status.id = cases.case_status), 0) AS status_name,
+      IFNULL((SELECT status_color FROM case_status WHERE  case_status.id = cases.case_status), 0) AS status_color,
+     IFNULL((SELECT court_name FROM courts WHERE courts.id = cases.court_id), 0) AS court_name,
+      IFNULL((SELECT cust_name FROM customer WHERE customer.id = cases.client_id), 0) AS client_name,
+      -- (SELECT JSON_ARRAYAGG(JSON_OBJECT("name", users.full_name, "id", users.id)) 
+      --  FROM caselawyers 
+      --  JOIN users ON users.id = caselawyers.user_id 
+      --  WHERE caselawyers.case_id = cases.id) AS team
+       (SELECT GROUP_CONCAT(JSON_OBJECT("name", users.full_name, "id", users.id)) 
+       FROM caselawyers 
+       JOIN users ON users.id = caselawyers.user_id 
+       WHERE caselawyers.case_id = cases.id) AS team
+    FROM
+     ' . $this->table . ' 
+    WHERE 
+    cases.case_title LIKE :searchTerm  AND cases.case_title != ""
+    ORDER BY
+    cases.case_open_date DESC';
+
+  // Prepare statement
+  $stmt = $this->conn->prepare($query);
+  // Bind id
+  $stmt->bindParam(':searchTerm', $this->searchTerm, PDO::PARAM_STR); 
+  // Execute query
+  $stmt->execute();
+  return $stmt;
+}
+
+
+
+// get case in the range
+public function getCasesInRange() {
+  // Create query
+  $query = 'SELECT 
+      cases.id, 
+      cases.case_title,
+      cases.client_id,
+      cases.case_type,
+      cases.client_role,
+      cases.service_classification,
+      cases.branch,
+      cases.court_id,
+      cases.opponent_name,
+      cases.opponent_id,
+      cases.opponent_representative,
+      cases.case_open_date,
+      cases.deadline,
+      cases.billing_type,
+      cases.claim_type,
+      cases.work_hour_value,
+      cases.estimated_work_hours,
+      cases.case_status,
+      cases.constraintId_najz,
+      cases.archive_id_najz,
+      cases.caseId_najz,
+      cases.case_classification_najz,
+      cases.case_open_date_najz,
+      cases.Plaintiff_Requests,
+      cases.case_status_najz,
+      cases.case_subject,
+      IFNULL((SELECT status_name FROM case_status WHERE case_status.id = cases.case_status), 0) AS status_name,
+      IFNULL((SELECT status_color FROM case_status WHERE  case_status.id = cases.case_status), 0) AS status_color,
+     IFNULL((SELECT court_name FROM courts WHERE courts.id = cases.court_id), 0) AS court_name,
       IFNULL((SELECT cust_name FROM customer WHERE customer.id = cases.client_id), 0) AS client_name,
       (SELECT GROUP_CONCAT(JSON_OBJECT("full_name", users.full_name, "id", users.id)) 
        FROM caselawyers 
@@ -220,7 +292,7 @@ public function getCasesInRange() {
       cases.client_role,
       cases.service_classification,
       cases.branch,
-      cases.court_name,
+      cases.court_id,
       cases.opponent_name,
       cases.opponent_id,
       cases.opponent_representative,
@@ -239,6 +311,9 @@ public function getCasesInRange() {
       cases.Plaintiff_Requests,
       cases.case_status_najz,
       cases.case_subject,
+      IFNULL((SELECT status_name FROM case_status WHERE case_status.id = cases.case_status), 0) AS status_name,
+      IFNULL((SELECT status_color FROM case_status WHERE  case_status.id = cases.case_status), 0) AS status_color,
+       IFNULL((SELECT court_name FROM courts WHERE courts.id = cases.court_id), 0) AS court_name,
       IFNULL((SELECT cust_name FROM customer WHERE customer.id = cases.client_id), 0) AS client_name,
       (SELECT GROUP_CONCAT(JSON_OBJECT("name", users.full_name, "id", users.id)) 
        FROM caselawyers 
@@ -275,7 +350,7 @@ public function getCasesInRange() {
     client_role = :client_role,
     service_classification = :service_classification,
     branch = :branch,
-    court_name = :court_name,
+    court_id = :court_id,
     opponent_name = :opponent_name,
     opponent_id = :opponent_id,
     opponent_representative = :opponent_representative,
@@ -306,7 +381,7 @@ public function getCasesInRange() {
     $this->client_role = htmlspecialchars(strip_tags($this->client_role));
     $this->service_classification = htmlspecialchars(strip_tags($this->service_classification));
     $this->branch = htmlspecialchars(strip_tags($this->branch));
-    $this->court_name = htmlspecialchars(strip_tags($this->court_name));
+    $this->court_id = htmlspecialchars(strip_tags($this->court_id));
     $this->opponent_name = htmlspecialchars(strip_tags($this->opponent_name));
     $this->opponent_id = htmlspecialchars(strip_tags($this->opponent_id));
     $this->opponent_representative = htmlspecialchars(strip_tags($this->opponent_representative));
@@ -334,7 +409,7 @@ public function getCasesInRange() {
     $stmt->bindParam(':client_role', $this->client_role);
     $stmt->bindParam(':service_classification', $this->service_classification);
     $stmt->bindParam(':branch', $this->branch);
-    $stmt->bindParam(':court_name', $this->court_name);
+    $stmt->bindParam(':court_id', $this->court_id);
     $stmt->bindParam(':opponent_name', $this->opponent_name);
     $stmt->bindParam(':opponent_id', $this->opponent_id);
     $stmt->bindParam(':opponent_representative', $this->opponent_representative);
@@ -377,7 +452,7 @@ public function getCasesInRange() {
     client_role = :client_role,
     service_classification = :service_classification,
     branch = :branch,
-    court_name = :court_name,
+    court_id = :court_id,
     opponent_name = :opponent_name,
     opponent_id = :opponent_id,
     opponent_representative = :opponent_representative,
@@ -410,7 +485,7 @@ public function getCasesInRange() {
     $this->client_role = htmlspecialchars(strip_tags($this->client_role));
     $this->service_classification = htmlspecialchars(strip_tags($this->service_classification));
     $this->branch = htmlspecialchars(strip_tags($this->branch));
-    $this->court_name = htmlspecialchars(strip_tags($this->court_name));
+    $this->court_id = htmlspecialchars(strip_tags($this->court_id));
     $this->opponent_name = htmlspecialchars(strip_tags($this->opponent_name));
     $this->opponent_id = htmlspecialchars(strip_tags($this->opponent_id));
     $this->opponent_representative = htmlspecialchars(strip_tags($this->opponent_representative));
@@ -439,7 +514,7 @@ public function getCasesInRange() {
     $stmt->bindParam(':client_role', $this->client_role);
     $stmt->bindParam(':service_classification', $this->service_classification);
     $stmt->bindParam(':branch', $this->branch);
-    $stmt->bindParam(':court_name', $this->court_name);
+    $stmt->bindParam(':court_id', $this->court_id);
     $stmt->bindParam(':opponent_name', $this->opponent_name);
     $stmt->bindParam(':opponent_id', $this->opponent_id);
     $stmt->bindParam(':opponent_representative', $this->opponent_representative);

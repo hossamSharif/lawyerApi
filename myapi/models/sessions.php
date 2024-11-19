@@ -191,6 +191,7 @@
       $query = 'SELECT 
       sessions.id, 
         sessions.lawyer_id,
+        sessions.session_title 
         sessions.cust_id,
         sessions.case_id,
         sessions.court_name,
@@ -209,6 +210,43 @@
       sessions.id = :id
       ORDER BY
       sessions.session_date DESC';
+        //Prepare statement
+        $stmt = $this->conn->prepare($query);
+        // Bind pay_id
+        // $stmt->bindParam(':store_id', $this->store_id, PDO::PARAM_INT); 
+        // $stmt->bindParam(':phone', $this->phone, PDO::PARAM_INT); 
+        //  $stmt->bindParam(':yearId', $this->yearId, PDO::PARAM_INT); 
+        // Execute query
+        $stmt->execute();
+    
+        return $stmt ;
+       
+    }
+
+    public function getTopSessions(){
+      // Create query
+      $query = 'SELECT 
+      sessions.id,
+      sessions.session_title ,
+        sessions.lawyer_id,
+        sessions.cust_id,
+        sessions.case_id,
+        sessions.court_name,
+        sessions.session_date,
+        sessions.session_time,
+        sessions.session_type,
+        sessions.opponent_name,
+        sessions.opponent_representative,
+        sessions.session_status,
+        sessions.session_result,
+        IFNULL((SELECT cust_name FROM customer WHERE customer.id = sessions.cust_id), 0) AS customer , 
+        IFNULL((SELECT full_name  FROM users WHERE users.id = sessions.lawyer_id), 0) AS lawyer_name
+      FROM
+       ' . $this->table . ' 
+        WHERE 
+            sessions.session_title != ""
+            ORDER BY
+            sessions.session_date DESC';
         //Prepare statement
         $stmt = $this->conn->prepare($query);
         // Bind pay_id

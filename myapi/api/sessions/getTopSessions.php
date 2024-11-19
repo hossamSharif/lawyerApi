@@ -14,7 +14,7 @@
   $session = new Sessions($db);
 
   // Session read query
-  $result = $session->read();
+  $result = $session->getTopSessions();
   
   // Get row count
   $num = $result->rowCount();

@@ -2,7 +2,7 @@
   class CaseFiles  {
     // DB Stuff
     private $conn;
-    private $table = 'caseFiles'; 
+    private $table = 'casefiles'; 
 
     public $id;
     public $case_id;
@@ -30,21 +30,21 @@
 public function getCaseFileById() {
     // Create query
     $query = 'SELECT 
-        caseFiles.id, 
-        caseFiles.case_id, 
-        caseFiles.user_id,
-        caseFiles.file_name,
-        caseFiles.file_size,
-        caseFiles.file_url,
-        caseFiles.file_notes,
-        caseFiles.uploaded_at,
-        IFNULL((SELECT full_name FROM users WHERE users.id = caseFiles.user_id), 0) AS user_name
+        casefiles.id, 
+        casefiles.case_id, 
+        casefiles.user_id,
+        casefiles.file_name,
+        casefiles.file_size,
+        casefiles.file_url,
+        casefiles.file_notes,
+        casefiles.uploaded_at,
+        IFNULL((SELECT full_name FROM users WHERE users.id = casefiles.user_id), 0) AS user_name
       FROM
         ' . $this->table . ' 
       WHERE 
-        caseFiles.id = :id
+        casefiles.id = :id
       ORDER BY
-        caseFiles.uploaded_at DESC';
+        casefiles.uploaded_at DESC';
 
     // Prepare statement
     $stmt = $this->conn->prepare($query);
@@ -63,21 +63,21 @@ public function getCaseFileById() {
 public function getCaseFilesInRange() {
   // Create query
   $query = 'SELECT 
-      caseFiles.id, 
-      caseFiles.case_id, 
-      caseFiles.user_id,
-      caseFiles.file_name,
-      caseFiles.file_size,
-      caseFiles.file_url,
-      caseFiles.file_notes,
-      caseFiles.uploaded_at,
-      IFNULL((SELECT full_name FROM users WHERE users.id = caseFiles.user_id), 0) AS user_name
+      casefiles.id, 
+      casefiles.case_id, 
+      casefiles.user_id,
+      casefiles.file_name,
+      casefiles.file_size,
+      casefiles.file_url,
+      casefiles.file_notes,
+      casefiles.uploaded_at,
+      IFNULL((SELECT full_name FROM users WHERE users.id = casefiles.user_id), 0) AS user_name
     FROM
       ' . $this->table . '
     ORDER BY
-      caseFiles.id DESC
+      casefiles.id DESC
       WHERE 
-      caseFiles.case_id = :case_id
+      casefiles.case_id = :case_id
     LIMIT :startrange, :endrange';
 
   // Prepare statement
@@ -98,21 +98,21 @@ public function getCaseFilesInRange() {
 public function getCaseFilesByCaseId() {
   // Create query
   $query = 'SELECT 
-      caseFiles.id, 
-      caseFiles.case_id, 
-      caseFiles.user_id,
-      caseFiles.file_name,
-      caseFiles.file_size,
-      caseFiles.file_url,
-      caseFiles.file_notes,
-      caseFiles.uploaded_at,
-      IFNULL((SELECT full_name FROM users WHERE users.id = caseFiles.user_id), 0) AS user_name
+      casefiles.id, 
+      casefiles.case_id, 
+      casefiles.user_id,
+      casefiles.file_name,
+      casefiles.file_size,
+      casefiles.file_url,
+      casefiles.file_notes,
+      casefiles.uploaded_at,
+      IFNULL((SELECT full_name FROM users WHERE users.id = casefiles.user_id), 0) AS user_name
     FROM
       ' . $this->table . '
     WHERE 
-      caseFiles.case_id = :case_id
+      casefiles.case_id = :case_id
     ORDER BY
-      caseFiles.id DESC';
+      casefiles.id DESC';
 
   // Prepare statement
   $stmt = $this->conn->prepare($query);
@@ -131,19 +131,19 @@ public function getCaseFilesByCaseId() {
 public function read() {
   // Create query
   $query = 'SELECT 
-      caseFiles.id, 
-      caseFiles.case_id, 
-      caseFiles.user_id,
-      caseFiles.file_name,
-      caseFiles.file_size,
-      caseFiles.file_url,
-      caseFiles.file_notes,
-      caseFiles.uploaded_at,
-      IFNULL((SELECT full_name FROM users WHERE users.id = caseFiles.user_id), 0) AS user_name
+      casefiles.id, 
+      casefiles.case_id, 
+      casefiles.user_id,
+      casefiles.file_name,
+      casefiles.file_size,
+      casefiles.file_url,
+      casefiles.file_notes,
+      casefiles.uploaded_at,
+      IFNULL((SELECT full_name FROM users WHERE users.id = casefiles.user_id), 0) AS user_name
     FROM
       ' . $this->table . ' 
     ORDER BY
-      caseFiles.uploaded_at DESC';
+      casefiles.uploaded_at DESC';
   
   // Prepare statement
   $stmt = $this->conn->prepare($query);

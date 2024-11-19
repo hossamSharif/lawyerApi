@@ -12,11 +12,10 @@
   $case = new Cases($db);
 
   // Get ID
-  $case->startrange = isset($_GET['startrange']) ? $_GET['startrange'] : die();
-  $case->endrange = isset($_GET['endrange']) ? $_GET['endrange'] : die();
+  $case->searchTerm = isset($_GET['searchTerm']) ? $_GET['searchTerm'] : die();
 
   // Get post
-  $result = $case->getCasesInRange();
+  $result = $case->getCaseBySearchTerm();
   $num = $result->rowCount();
   // Create array
   $case_arr = array();
@@ -45,7 +44,7 @@ if($num > 0) {
     'estimated_work_hours' => $row['estimated_work_hours'],
     'case_status' => $row['case_status'],
     'status_name' => $row['status_name'],
-     'status_color' => $row['status_color'],
+    'status_color' => $row['status_color'],
     'constraintId_najz' => $row['constraintId_najz'],
     'archive_id_najz' => $row['archive_id_najz'],
     'caseId_najz' => $row['caseId_najz'],

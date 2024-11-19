@@ -43,6 +43,8 @@ if($num > 0) {
     'work_hour_value' => $row['work_hour_value'],
     'estimated_work_hours' => $row['estimated_work_hours'],
     'case_status' => $row['case_status'],
+    'status_name' => $row['status_name'],
+    'status_color' => $row['status_color'],
     'constraintId_najz' => $row['constraintId_najz'],
     'archive_id_najz' => $row['archive_id_najz'],
     'caseId_najz' => $row['caseId_najz'],

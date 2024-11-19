@@ -170,8 +170,7 @@ public function getConsultationsByCaseId() {
     // Prepare statement
     $stmt = $this->conn->prepare($query);
     
-    // Bind id
-    $stmt->bindParam(':id', $this->id, PDO::PARAM_INT);
+   
     
     // Execute query
     $stmt->execute();
