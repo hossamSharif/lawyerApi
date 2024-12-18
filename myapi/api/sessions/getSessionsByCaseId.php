@@ -28,7 +28,7 @@ if($num > 0) {
             'lawyer_id' => $row['lawyer_id'],
             'case_id' => $row['case_id'],
             'cust_id' => $row['cust_id'],
-            'court_name' => $row['court_name'],
+            'court_id' => $row['court_id'],
             'session_date' => $row['session_date'],
             'session_time' => $row['session_time'],
             'session_type' => $row['session_type'],
@@ -38,7 +38,8 @@ if($num > 0) {
             'session_status' => $row['session_status'],
             'session_result' => $row['session_result'],
             'lawyer_name' => $row['lawyer_name'],
-            'customer' => $row['customer'] 
+            'customer' => $row['customer'] ,
+            'court_name' => $row['court_name']
        );  
        
         // Push to "data"

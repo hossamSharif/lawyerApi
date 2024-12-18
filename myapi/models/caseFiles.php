@@ -12,6 +12,7 @@
     public $file_url;
     public $file_notes;
     public $uploaded_at;
+    public $category;
 
 
       public  $startrange ;
@@ -38,6 +39,7 @@ public function getCaseFileById() {
         casefiles.file_url,
         casefiles.file_notes,
         casefiles.uploaded_at,
+        caesefiles.category, 
         IFNULL((SELECT full_name FROM users WHERE users.id = casefiles.user_id), 0) AS user_name
       FROM
         ' . $this->table . ' 
@@ -71,13 +73,14 @@ public function getCaseFilesInRange() {
       casefiles.file_url,
       casefiles.file_notes,
       casefiles.uploaded_at,
+      caesefiles.category, 
       IFNULL((SELECT full_name FROM users WHERE users.id = casefiles.user_id), 0) AS user_name
     FROM
       ' . $this->table . '
     ORDER BY
       casefiles.id DESC
       WHERE 
-      casefiles.case_id = :case_id
+    casefiles.case_id = :case_id AND casefiles.category = :category
     LIMIT :startrange, :endrange';
 
   // Prepare statement
@@ -106,11 +109,12 @@ public function getCaseFilesByCaseId() {
       casefiles.file_url,
       casefiles.file_notes,
       casefiles.uploaded_at,
+      casefiles.category, 
       IFNULL((SELECT full_name FROM users WHERE users.id = casefiles.user_id), 0) AS user_name
     FROM
       ' . $this->table . '
     WHERE 
-      casefiles.case_id = :case_id
+      casefiles.case_id = :case_id AND casefiles.category = :category
     ORDER BY
       casefiles.id DESC';
 
@@ -119,6 +123,7 @@ public function getCaseFilesByCaseId() {
   
   // Bind case_id
   $stmt->bindParam(':case_id', $this->case_id, PDO::PARAM_INT);
+  $stmt->bindParam(':category', $this->category, PDO::PARAM_STR);
   
   // Execute query
   $stmt->execute();
@@ -139,15 +144,18 @@ public function read() {
       casefiles.file_url,
       casefiles.file_notes,
       casefiles.uploaded_at,
+      caesefiles.category, 
       IFNULL((SELECT full_name FROM users WHERE users.id = casefiles.user_id), 0) AS user_name
     FROM
       ' . $this->table . ' 
+       WHERE 
+    casefiles.category = :category
     ORDER BY
       casefiles.uploaded_at DESC';
   
   // Prepare statement
   $stmt = $this->conn->prepare($query);
-  
+  $stmt->bindParam(':category', $this->category, PDO::PARAM_STR);
   // Execute query
   $stmt->execute();
   
@@ -164,7 +172,8 @@ public function create() {
       file_size = :file_size,
       file_url = :file_url,
       file_notes = :file_notes,
-      uploaded_at = :uploaded_at';
+      uploaded_at = :uploaded_at ,
+      category = :category';
 
   // Prepare Statement
   $stmt = $this->conn->prepare($query);
@@ -177,6 +186,7 @@ public function create() {
   $this->file_url = htmlspecialchars(strip_tags($this->file_url));
   $this->file_notes = htmlspecialchars(strip_tags($this->file_notes));
   $this->uploaded_at = htmlspecialchars(strip_tags($this->uploaded_at));
+  $this->category = htmlspecialchars(strip_tags($this->category));
 
   // Bind data
   $stmt->bindParam(':case_id', $this->case_id);
@@ -186,6 +196,7 @@ public function create() {
   $stmt->bindParam(':file_url', $this->file_url);
   $stmt->bindParam(':file_notes', $this->file_notes);
   $stmt->bindParam(':uploaded_at', $this->uploaded_at);
+  $stmt->bindParam(':category', $this->category);
 
   // Execute query
   if($stmt->execute()) {
@@ -212,7 +223,8 @@ public function create() {
     file_size = :file_size,
     file_url = :file_url,
     file_notes = :file_notes,
-    uploaded_at = :uploaded_at
+    uploaded_at = :uploaded_at,
+    category = :category
     WHERE id = :id';
 
     // Prepare Statement
@@ -227,6 +239,7 @@ public function create() {
     $this->file_url = htmlspecialchars(strip_tags($this->file_url));
     $this->file_notes = htmlspecialchars(strip_tags($this->file_notes));
     $this->uploaded_at = htmlspecialchars(strip_tags($this->uploaded_at));
+    $this->category = htmlspecialchars(strip_tags($this->category));
 
     // Bind data
     $stmt->bindParam(':id', $this->id);
@@ -237,6 +250,7 @@ public function create() {
     $stmt->bindParam(':file_url', $this->file_url);
     $stmt->bindParam(':file_notes', $this->file_notes);
     $stmt->bindParam(':uploaded_at', $this->uploaded_at);
+    $stmt->bindParam(':category', $this->category);
 
     // Execute query
     if($stmt->execute()) {

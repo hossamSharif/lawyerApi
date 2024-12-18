@@ -44,7 +44,13 @@
         'company_phone' => $company_phone ,
          'company_represent' => $company_represent ,
          'company_email' => $company_email ,
-         'status' => $status  
+         'status' => $status  ,
+         'passport' => $passport ,
+         'full_address' => $full_address ,
+         'city' => $city ,
+         'region' => $region ,
+         'company_represent_desc' => $company_represent_desc,
+         'phone_key' => $phone_key  
       );
 
       // Push to "data"

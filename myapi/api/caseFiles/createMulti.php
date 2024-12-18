@@ -28,6 +28,7 @@
     $casefiles->file_url = $col['file_url'];
     $casefiles->file_notes = $col['file_notes'];
     $casefiles->uploaded_at = $col['uploaded_at'];
+    $casefiles->category = $col['category'];
 
     array_push($res, array(
       "case_id" => $col['case_id'],
@@ -36,7 +37,8 @@
       "file_size" => $col['file_size'],
       "file_url" => $col['file_url'],
       "file_notes" => $col['file_notes'],
-      "uploaded_at" => $col['uploaded_at']
+      "uploaded_at" => $col['uploaded_at'],
+      "category" => $col['category']
     ));
   }
 
@@ -44,11 +46,11 @@
   $values = '';
   for($i = 0; $i < $max; $i++){
     if ($i == 0) { 
-      $values = '('.$res[$i]['case_id'].','.$res[$i]['user_id'].',"'.$res[$i]['file_name'].'",'.$res[$i]['file_size'].',"'.$res[$i]['file_url'].'","'.$res[$i]['file_notes'].'","'.$res[$i]['uploaded_at'].'")';
+      $values = '('.$res[$i]['case_id'].','.$res[$i]['user_id'].',"'.$res[$i]['file_name'].'",'.$res[$i]['file_size'].',"'.$res[$i]['file_url'].'","'.$res[$i]['file_notes'].'","'.$res[$i]['uploaded_at'].'","'.$res[$i]['category'].'")';
     } elseif ($i == $max-1) { 
-      $values = ''.$values.',('.$res[$i]['case_id'].','.$res[$i]['user_id'].',"'.$res[$i]['file_name'].'",'.$res[$i]['file_size'].',"'.$res[$i]['file_url'].'","'.$res[$i]['file_notes'].'","'.$res[$i]['uploaded_at'].'")';
+      $values = ''.$values.',('.$res[$i]['case_id'].','.$res[$i]['user_id'].',"'.$res[$i]['file_name'].'",'.$res[$i]['file_size'].',"'.$res[$i]['file_url'].'","'.$res[$i]['file_notes'].'","'.$res[$i]['uploaded_at'].'","'.$res[$i]['category'].'")';
     } elseif ($i > 0 && $i < $max-1){ 
-      $values = ''.$values.',('.$res[$i]['case_id'].','.$res[$i]['user_id'].',"'.$res[$i]['file_name'].'",'.$res[$i]['file_size'].',"'.$res[$i]['file_url'].'","'.$res[$i]['file_notes'].'","'.$res[$i]['uploaded_at'].'")';
+      $values = ''.$values.',('.$res[$i]['case_id'].','.$res[$i]['user_id'].',"'.$res[$i]['file_name'].'",'.$res[$i]['file_size'].',"'.$res[$i]['file_url'].'","'.$res[$i]['file_notes'].'","'.$res[$i]['uploaded_at'].'","'.$res[$i]['category'].'")';
     }   
   }
 

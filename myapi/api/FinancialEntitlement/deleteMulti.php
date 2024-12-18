@@ -6,29 +6,29 @@
   header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
 
   include_once '../../config/Database.php';
-  include_once '../../models/Doctors.php';
+  include_once '../../models/financialEntitlements.php';
 
   // Instantiate DB & connect
   $database = new Database();
   $db = $database->connect();
 
-  // Instantiate blog post object
-  $doctor = new Doctors($db);
+  // Instantiate payments object
+  $payments = new Financial_entitlement($db);
 
   // Get raw posted data
-  $data = json_decode(file_get_contents("php://input"));
+  // $data = json_decode(file_get_contents("php://input"));
 
   // Set ID to update
-  $doctor->dr_id = $data->dr_id;
-
+  $payments->case_id = isset($_GET['case_id']) ? $_GET['case_id'] : die();
+  
   // Delete post
-  if($doctor->delete()) {
+  if($payments->deleteMulti()) {
     echo json_encode(
-      array('message' => 'Post Deleted')
+      array('message' => 'Payments Deleted')
     );
   } else {
     echo json_encode(
-      array('message' => 'Post Not Deleted')
+      array('message' => 'Payments Not Deleted')
     );
   }
-
+?>

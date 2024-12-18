@@ -27,6 +27,8 @@
   $caseFile->file_url = $data->file_url;
   $caseFile->file_notes = $data->file_notes;
   $caseFile->uploaded_at = $data->uploaded_at;
+  $caseFile->category = $data->category;
+  
 
   // Update consultation
   if($caseFile->update()) {

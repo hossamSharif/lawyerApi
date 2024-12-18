@@ -2,33 +2,28 @@
   // Headers
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
-  header('Access-Control-Allow-Methods: PUT');
+  header('Access-Control-Allow-Methods: DELETE');
   header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Content-Type, Access-Control-Allow-Methods, Authorization,X-Requested-With');
 
   include_once '../../config/Database.php';
-  include_once '../../models/Category.php';
+  include_once '../../models/notifications.php';
   // Instantiate DB & connect
   $database = new Database();
   $db = $database->connect();
 
   // Instantiate blog post object
-  $category = new Category($db);
+  $case = new Notifications($db);
 
-  // Get raw posted data
   $data = json_decode(file_get_contents("php://input"));
+  $case->id = isset($_GET['id']) ? $_GET['id'] : die();
 
-  // Set ID to UPDATE
-  $category->id = $data->id;
-
-  $category->name = $data->name;
-
-  // Update post
-  if($category->update()) {
+  // Delete post
+  if($case->delete()) {
     echo json_encode(
-      array('message' => 'Category Updated')
+      array('message' => 'case deleted')
     );
   } else {
     echo json_encode(
-      array('message' => 'Category not updated')
+      array('message' => 'case not deleted')
     );
   }

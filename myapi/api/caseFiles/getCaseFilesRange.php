@@ -17,6 +17,7 @@
   $caseFile->startrange = isset($_GET['startrange']) ? $_GET['startrange'] : die();
   $caseFile->endrange = isset($_GET['endrange']) ? $_GET['endrange'] : die();
   $caseFile->case_id = isset($_GET['case_id']) ? $_GET['case_id'] : die();
+  $caseFile->category = isset($_GET['category']) ? $_GET['category'] : die();
 
   // Get case files
   $result = $caseFile->getCaseFilesInRange();
@@ -38,7 +39,8 @@
         'file_url' => $row['file_url'],
         'file_notes' => $row['file_notes'],
         'uploaded_at' => $row['uploaded_at'],
-        'user_name' => $row['user_name']
+        'user_name' => $row['user_name'],
+        'category' => $row['category']
       );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
       // Push to "data"
       array_push($caseFile_arr['data'], $caseFile_item);

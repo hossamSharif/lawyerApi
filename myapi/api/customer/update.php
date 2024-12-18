@@ -34,9 +34,14 @@
    $category->company_ident = $data->company_ident;
    $category->status = $data->status;
    $category->company_represent = $data->company_represent;
-   
+   $category->full_address = $data->full_address;
+   $category->city = $data->city;
+   $category->region = $data->region;
+   $category->company_represent_desc = $data->company_represent_desc;
+   $category->passport = $data->passport;
+   $category->phone_key = $data->phone_key;   
  
-
+   
   // $category->name = $data->name;
 
   // Update post

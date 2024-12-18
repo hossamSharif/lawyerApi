@@ -9,7 +9,7 @@
       public $session_title; // ID of the lawyer attending the session
       public $cust_id; // ID of the lawyer attending the session
       public $case_id; // ID of the case related to the session
-      public $court_name; // Name of the court where the session will be held
+      public $court_id; // Name of the court where the session will be held
       public $session_date; // Date of the session
       public $session_time; // Time of the session
       public $session_type; // Type of session (e.g., hearing, trial)
@@ -17,6 +17,8 @@
       public $opponent_representative; // Representative of the opponent
       public $session_status; // Status of the session (e.g., scheduled, completed, postponed)
       public $session_result; // Summary or final result of the session
+
+      public $court_name;
     // Constructor with DB
     public function __construct($db) {
       $this->conn = $db;
@@ -35,7 +37,7 @@
         cases.client_role,
         cases.service_classification,
         cases.branch,
-        cases.court_name,
+        cases.court_id,
         cases.opponent_name,
         cases.opponent_id,
         cases.opponent_representative,
@@ -87,7 +89,7 @@
         sessions.session_title,
         sessions.cust_id,
          sessions.case_id,
-        sessions.court_name,
+        sessions.court_id,
         sessions.session_date,
         sessions.session_time,
         sessions.session_type,
@@ -95,6 +97,7 @@
         sessions.opponent_representative,
         sessions.session_status,
         sessions.session_result,
+          IFNULL((SELECT court_name FROM courts WHERE courts.id = sessions.court_id), 0) AS court_name , 
         IFNULL((SELECT cust_name FROM customer WHERE customer.id = sessions.cust_id), 0) AS customer , 
         IFNULL((SELECT full_name  FROM users WHERE users.id = sessions.lawyer_id), 0) AS lawyer_name
       FROM
@@ -122,7 +125,7 @@
         sessions.lawyer_id,
        sessions.cust_id,
          sessions.case_id,
-        sessions.court_name,
+        sessions.court_id,
         sessions.session_date,
         sessions.session_time,
         sessions.session_type,
@@ -130,6 +133,7 @@
         sessions.opponent_representative,
         sessions.session_status,
         sessions.session_result,
+          IFNULL((SELECT court_name FROM courts WHERE courts.id = sessions.court_id), 0) AS court_name , 
         IFNULL((SELECT cust_name FROM customer WHERE customer.id = sessions.cust_id), 0) AS customer , 
         IFNULL((SELECT full_name  FROM users WHERE users.id = sessions.lawyer_id), 0) AS lawyer_name
       FROM
@@ -158,7 +162,7 @@
         sessions.lawyer_id,
         sessions.cust_id,
         sessions.case_id,
-        sessions.court_name,
+        sessions.court_id,
         sessions.session_date,
         sessions.session_time,
         sessions.session_type,
@@ -166,6 +170,7 @@
         sessions.opponent_representative,
         sessions.session_status,
         sessions.session_result,
+          IFNULL((SELECT court_name FROM courts WHERE courts.id = sessions.court_id), 0) AS court_name , 
         IFNULL((SELECT cust_name FROM customer WHERE customer.id = sessions.cust_id), 0) AS customer , 
         IFNULL((SELECT full_name  FROM users WHERE users.id = sessions.lawyer_id), 0) AS lawyer_name
       FROM
@@ -194,7 +199,7 @@
         sessions.session_title 
         sessions.cust_id,
         sessions.case_id,
-        sessions.court_name,
+        sessions.court_id,
         sessions.session_date,
         sessions.session_time,
         sessions.session_type,
@@ -202,6 +207,7 @@
         sessions.opponent_representative,
         sessions.session_status,
         sessions.session_result,
+          IFNULL((SELECT court_name FROM courts WHERE courts.id = sessions.court_id), 0) AS court_name , 
         IFNULL((SELECT cust_name FROM customer WHERE customer.id = sessions.cust_id), 0) AS customer , 
         IFNULL((SELECT full_name  FROM users WHERE users.id = sessions.lawyer_id), 0) AS lawyer_name
       FROM
@@ -231,7 +237,7 @@
         sessions.lawyer_id,
         sessions.cust_id,
         sessions.case_id,
-        sessions.court_name,
+        sessions.court_id,
         sessions.session_date,
         sessions.session_time,
         sessions.session_type,
@@ -239,6 +245,7 @@
         sessions.opponent_representative,
         sessions.session_status,
         sessions.session_result,
+        IFNULL((SELECT court_name FROM courts WHERE courts.id = sessions.court_id), 0) AS court_name , 
         IFNULL((SELECT cust_name FROM customer WHERE customer.id = sessions.cust_id), 0) AS customer , 
         IFNULL((SELECT full_name  FROM users WHERE users.id = sessions.lawyer_id), 0) AS lawyer_name
       FROM
@@ -255,9 +262,7 @@
         //  $stmt->bindParam(':yearId', $this->yearId, PDO::PARAM_INT); 
         // Execute query
         $stmt->execute();
-    
         return $stmt ;
-       
     }
 
   // Create cases
@@ -267,7 +272,7 @@
         lawyer_id = :lawyer_id,
         case_id = :case_id,
         cust_id = :cust_id,
-        court_name = :court_name,
+        court_id = :court_id,
         session_date = :session_date,
         session_time = :session_time,
         session_type = :session_type,
@@ -284,7 +289,7 @@
     $this->lawyer_id = htmlspecialchars(strip_tags($this->lawyer_id));
     $this->case_id = htmlspecialchars(strip_tags($this->case_id));
     $this->cust_id = htmlspecialchars(strip_tags($this->cust_id));
-    $this->court_name = htmlspecialchars(strip_tags($this->court_name));
+    $this->court_id = htmlspecialchars(strip_tags($this->court_id));
     $this->session_date = htmlspecialchars(strip_tags($this->session_date));
     $this->session_time = htmlspecialchars(strip_tags($this->session_time));
     $this->session_type = htmlspecialchars(strip_tags($this->session_type));
@@ -298,7 +303,7 @@
     $stmt->bindParam(':lawyer_id', $this->lawyer_id);
     $stmt->bindParam(':case_id', $this->case_id);
     $stmt->bindParam(':cust_id', $this->cust_id);
-    $stmt->bindParam(':court_name', $this->court_name);
+    $stmt->bindParam(':court_id', $this->court_id);
     $stmt->bindParam(':session_date', $this->session_date);
     $stmt->bindParam(':session_time', $this->session_time);
     $stmt->bindParam(':session_type', $this->session_type);
@@ -328,7 +333,7 @@
     lawyer_id = :lawyer_id,
     case_id = :case_id,
     cust_id = :cust_id,
-    court_name = :court_name,
+    court_id = :court_id,
     session_date = :session_date,
     session_time = :session_time,
     session_type = :session_type,
@@ -347,7 +352,7 @@
     $this->lawyer_id = htmlspecialchars(strip_tags($this->lawyer_id));
     $this->case_id = htmlspecialchars(strip_tags($this->case_id));
     $this->cust_id = htmlspecialchars(strip_tags($this->cust_id));
-    $this->court_name = htmlspecialchars(strip_tags($this->court_name));
+    $this->court_id = htmlspecialchars(strip_tags($this->court_id));
     $this->session_date = htmlspecialchars(strip_tags($this->session_date));
     $this->session_time = htmlspecialchars(strip_tags($this->session_time));
     $this->session_type = htmlspecialchars(strip_tags($this->session_type));
@@ -362,7 +367,7 @@
     $stmt->bindParam(':lawyer_id', $this->lawyer_id);
     $stmt->bindParam(':case_id', $this->case_id);
     $stmt->bindParam(':cust_id', $this->cust_id); 
-    $stmt->bindParam(':court_name', $this->court_name);
+    $stmt->bindParam(':court_id', $this->court_id);
     $stmt->bindParam(':session_date', $this->session_date);
     $stmt->bindParam(':session_time', $this->session_time);
     $stmt->bindParam(':session_type', $this->session_type);

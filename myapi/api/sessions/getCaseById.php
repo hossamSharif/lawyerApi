@@ -32,7 +32,7 @@ if($num > 0) {
     'client_role' => $row['client_role'],
     'service_classification' => $row['service_classification'],
     'branch' => $row['branch'],
-    'court_name' => $row['court_name'],
+    'court_id' => $row['court_id'],
     'opponent_name' => $row['opponent_name'],
     'opponent_id' => $row['opponent_id'],
     'opponent_representative' => $row['opponent_representative'],

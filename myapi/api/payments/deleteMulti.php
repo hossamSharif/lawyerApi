@@ -19,7 +19,7 @@
   // $data = json_decode(file_get_contents("php://input"));
 
   // Set ID to update
-  $payments->contract_id = isset($_GET['contract_id']) ? $_GET['contract_id'] : die();
+  $payments->case_id = isset($_GET['case_id']) ? $_GET['case_id'] : die();
   
   // Delete post
   if($payments->deleteMulti()) {

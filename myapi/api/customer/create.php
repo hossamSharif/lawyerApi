@@ -32,6 +32,12 @@
    $invoice->company_ident = $data->company_ident;
    $invoice->status = $data->status;
    $invoice->company_represent = $data->company_represent;
+   $invoice->full_address = $data->full_address;
+   $invoice->city = $data->city;
+   $invoice->region = $data->region;
+   $invoice->company_represent_desc = $data->company_represent_desc;
+   $invoice->passport = $data->passport;
+   $invoice->phone_key = $data->phone_key;
   // Create post
   if($invoice->create()) {
     $last_id = $db->lastInsertId();

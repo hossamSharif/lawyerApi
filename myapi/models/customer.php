@@ -20,7 +20,12 @@
     public $company_represent;
     public $company_email; 
     public $status;
-
+    public $passport;
+    public $full_address;
+    public $city;
+    public $region;
+    public $company_represent_desc;
+    public $phone_key;
  
     // Constructor with DB
     public function __construct($db) {
@@ -45,7 +50,13 @@
          company_regno ,
          company_ident ,
         status ,
-        company_represent 
+        company_represent ,
+        full_address ,  
+        city ,
+        region ,
+        company_represent_desc,
+        passport,
+        phone_key
           FROM
            ' . $this->table . '
            WHERE  
@@ -76,7 +87,7 @@
     $query = 'INSERT INTO ' .
       $this->table . '
     SET
-    phone = :phone ,cust_name = :cust_name ,cust_type = :cust_type,cust_ref = :cust_ref ,cust_ident = :cust_ident ,email = :email,company_phone = :company_phone, company_name = :company_name, company_ident = :company_ident, company_regno = :company_regno, company_email = :company_email,company_represent = :company_represent, status = :status';
+    phone = :phone ,cust_name = :cust_name ,cust_type = :cust_type,cust_ref = :cust_ref ,cust_ident = :cust_ident ,email = :email,company_phone = :company_phone, company_name = :company_name, company_ident = :company_ident, company_regno = :company_regno, company_email = :company_email,company_represent = :company_represent, status = :status , full_address = :full_address, city = :city, region = :region, company_represent_desc = :company_represent_desc , passport = :passport , phone_key = :phone_key';
       
   // Prepare Statement
   $stmt = $this->conn->prepare($query);
@@ -95,6 +106,13 @@
     $this->company_email = htmlspecialchars(strip_tags($this->company_email));
     $this->company_represent = htmlspecialchars(strip_tags($this->company_represent));
     $this->status = htmlspecialchars(strip_tags($this->status));
+    $this->full_address = htmlspecialchars(strip_tags($this->full_address));
+    $this->city = htmlspecialchars(strip_tags($this->city));
+    $this->region = htmlspecialchars(strip_tags($this->region));
+    $this->company_represent_desc = htmlspecialchars(strip_tags($this->company_represent_desc));
+    $this->passport = htmlspecialchars(strip_tags($this->passport));
+    $this->phone_key = htmlspecialchars(strip_tags($this->phone_key));
+    
         
 
   // Bind data
@@ -111,6 +129,12 @@
     $stmt-> bindParam(':company_email', $this->company_email);
     $stmt-> bindParam(':company_represent', $this->company_represent);
     $stmt-> bindParam(':status', $this->status);
+    $stmt-> bindParam(':full_address', $this->full_address);
+    $stmt-> bindParam(':city', $this->city);
+    $stmt-> bindParam(':region', $this->region);
+    $stmt-> bindParam(':company_represent_desc', $this->company_represent_desc);
+    $stmt-> bindParam(':passport', $this->passport);
+    $stmt-> bindParam(':phone_key', $this->phone_key);
   // Execute query
   if($stmt->execute()) {
     return true;
@@ -140,7 +164,13 @@
         company_regno = :company_regno,
         company_ident = :company_ident,
         status = :status,
-        company_represent = :company_represent
+        company_represent = :company_represent ,
+        full_address = :full_address,
+        city = :city,
+        region = :region,
+        company_represent_desc = :company_represent_desc,
+        passport = :passport ,
+        phone_key = :phone_key
        WHERE
      id = :id';
 
@@ -162,6 +192,12 @@
     $this->company_email = htmlspecialchars(strip_tags($this->company_email));
     $this->company_represent = htmlspecialchars(strip_tags($this->company_represent));
     $this->status = htmlspecialchars(strip_tags($this->status));
+    $this->full_address = htmlspecialchars(strip_tags($this->full_address));
+    $this->city = htmlspecialchars(strip_tags($this->city));
+    $this->region = htmlspecialchars(strip_tags($this->region));
+    $this->company_represent_desc = htmlspecialchars(strip_tags($this->company_represent_desc));
+    $this->passport = htmlspecialchars(strip_tags($this->passport));
+    $this->phone_key = htmlspecialchars(strip_tags($this->phone_key));
   
 
   // Bind data
@@ -179,6 +215,15 @@
      $stmt-> bindParam(':company_email', $this->company_email);
      $stmt-> bindParam(':company_represent', $this->company_represent);
      $stmt-> bindParam(':status', $this->status);
+     $stmt-> bindParam(':company_represent_desc', $this->company_represent_desc);
+     $stmt-> bindParam(':passport', $this->passport);
+     $stmt-> bindParam(':city', $this->city);
+     $stmt-> bindParam(':region', $this->region); 
+     $stmt-> bindParam(':full_address', $this->full_address); 
+     $stmt-> bindParam(':phone_key', $this->phone_key);
+
+
+
 
    // Execute query
    if($stmt->execute()) {

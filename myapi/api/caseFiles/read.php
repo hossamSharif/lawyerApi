@@ -12,7 +12,7 @@
 
   // Instantiate case file object
   $caseFile = new CaseFile($db);
-
+  $caseFile->category = isset($_GET['category']) ? $_GET['category'] : die();
   // Case file read query
   $result = $caseFile->read();
   
@@ -37,7 +37,8 @@
             'file_url' => $row['file_url'],
             'file_notes' => $row['file_notes'],
             'uploaded_at' => $row['uploaded_at'],
-            'user_name' => $row['user_name']
+            'user_name' => $row['user_name'],
+            'category' => $row['category']
           );
 
           // Push to "data"

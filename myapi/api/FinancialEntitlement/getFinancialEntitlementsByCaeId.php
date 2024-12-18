@@ -4,34 +4,37 @@
   header('Content-Type: application/json');
 
   include_once '../../config/Database.php';
-  include_once '../../models/payments.php';
+  include_once '../../models/financialEntitlements.php';
   
   // Instantiate DB & connect
   $database = new Database();
   $db = $database->connect();
-  // Instantiate payments object
-  $payments = new Payments($db);
+  // Instantiate financial entitlement object
+  $financial_entitlement = new Financial_entitlement($db);
 
-  // Get ID
-  $payments->contract_id = isset($_GET['contract_id']) ? $_GET['contract_id'] : die();
+  // Get case_id
+  $financial_entitlement->case_id = isset($_GET['case_id']) ? $_GET['case_id'] : die();
 
-  // Get post
-  $result = $payments->getPaymentsByContractId();
+  // Get financial entitlements
+  $result = $financial_entitlement->getFinancialEntitlementByCaseId();
   $num = $result->rowCount();
   // Create array
-  $payments_arr = array();
-  $payments_arr['data'] = array();
+  $financial_entitlement_arr = array();
+  $financial_entitlement_arr['data'] = array();
 if($num > 0) {
   while($row = $result->fetch(PDO::FETCH_ASSOC)) {
   extract($row);
-  $payments_arr = array(
-    'contract_id' => $row['contract_id'],
+  $financial_entitlement_arr = array(
+    'case_id' => $row['case_id'],
+    'client_id' => $row['client_id'],
     'amount' => $row['amount'],
-    'payment_date' => $row['payment_date'],
-    'due_date' => $row['due_date']
+    'due_date' => $row['due_date'],
+    'status' => $row['status'],
+    'description' => $row['description'],
+    'created_at' => $row['created_at']
   );                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   // Make JSON
-  print_r(json_encode($payments_arr));
+  print_r(json_encode($financial_entitlement_arr));
 } 
 }else{ 
   // No records found

@@ -6,37 +6,36 @@
   header('Access-Control-Allow-Headers: Access-Control-Allow-Headers, Content-Type, Access-Control-Allow-Methods, Authorization,X-Requested-With');
 
   include_once '../../config/Database.php';
-  include_once '../../models/caseFiles.php';
+  include_once '../../models/notifications.php';
 
   // Instantiate DB & connect
   $database = new Database();
   $db = $database->connect();
 
-  // Instantiate case file object
-  $caseFile = new CaseFiles($db);
+  // Instantiate notification object
+  $notification = new Notifications($db);
 
   // Get raw posted data
   $data = json_decode(file_get_contents("php://input"));
 
-  // Set case file properties
-  $caseFile->case_id = $data->case_id;
-  $caseFile->user_id = $data->user_id;
-  $caseFile->file_name = $data->file_name;
-  $caseFile->file_size = $data->file_size;
-  $caseFile->file_url = $data->file_url;
-  $caseFile->file_notes = $data->file_notes;
-  $caseFile->uploaded_at = $data->uploaded_at;
-  $caseFile->category = $data->category;
+  // Set notification properties
+  $notification->user_id = $data->user_id;
+  $notification->notification_type = $data->notification_type;
+  $notification->notification_message = $data->notification_message;
+  $notification->notification_date = $data->notification_date;
+  $notification->is_read = $data->is_read;
+  $notification->section_name = $data->section_name;
+  $notification->section_parameter = $data->section_parameter;
 
-  // Create case file
-  if($caseFile->create()) {
+  // Create notification
+  if($notification->create()) {
     $last_id = $db->lastInsertId();
     echo json_encode(
       array('message' => $last_id)
     );
   } else {
     echo json_encode(
-      array('message' => 'Case File Not Created')
+      array('message' => 'Notification Not Created')
     );
   }
 ?>

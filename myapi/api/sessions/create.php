@@ -22,7 +22,7 @@
   $session->lawyer_id = $data->lawyer_id;
   $session->case_id = $data->case_id;
   $session->cust_id = $data->cust_id;
-  $session->court_name = $data->court_name;
+  $session->court_id = $data->court_id;
   $session->session_date = $data->session_date;
   $session->session_time = $data->session_time;
   $session->session_type = $data->session_type;
